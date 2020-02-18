@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login here</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(back.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.log {
+	width: 300px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	border: 2px #fff;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	color: #fff;
+	background: #000;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1 {
+	margin-top: 50px;
+	text-align: center;
+}
+
+input[type="text"], [type="password"] {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	line-height: 40px;
+	margin-bottom: 20px;
+	background: transparent;
+	color: #fff;
+}
+
+button {
+	cursor: pointer;
+	margin-left: 100px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 20px;
+	height: 25px;
+	color: #000;
+	width: 100px;
+	background-color: white;
+}
+
+button.hover {
+	color: yellow;
+	width: 40%;
+}
+
+a {
+	margin-left: 30px;
+	line-height: 40PX;
+	color: white;
+}
+
+a.hover {
+	color: #fbfb;
+}
+
+.login input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+	<div class="log">
+		<img src="login.png" class="avatar">
+		<h1>Login here</h1>
+		<form method="post" action="login" class="login">
+			<label>Username</label>
+			    <input type="text" name="name" placeholder="Enter your username" required>
+		    <label>Password</label> 
+				<input type="password" name="pass" placeholder="Enter your password" required>
+			<input type="file" name="foto" accept="images/jpg,images/jpeg" required>
+			<input type="submit" value="login">
+			 
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping SYSTEM "hibernate-mapping-3.0.dtd"> 
+  
+ <hibernate-mapping>  
+  <class  table="student" name="hib.Student">  
+    <id name="id" column="id">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="name" ></property>  
+    <property name="city" ></property> 
+    <property name="salary"></property> 
+ <property name="username"></property> 
+  <property name="password"></property>             
+  </class>  
+            
+ </hibernate-mapping> 

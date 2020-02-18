@@ -1,0 +1,31 @@
+ <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+  <bean id="id2" class="jdbc.Address">
+     <constructor-arg value="Pallipalayam"></constructor-arg>
+    <constructor-arg value="Tamilnadu"></constructor-arg>
+    <constructor-arg value="India"></constructor-arg> 
+    
+   <!--  <property name="city" value="Pallipalayam"/>
+    <property name="state" value="Tamilnadu"/>
+    <property name="country" value="India"/> -->
+  </bean>
+  <bean id="id3" class="jdbc.Table">
+      <constructor-arg value="21" type="int"></constructor-arg> 
+      <constructor-arg value="Babloo"></constructor-arg> 
+      <constructor-arg>
+        <ref bean="id2"/>
+      </constructor-arg> 
+      
+    <!--    <property name="id" value="6"/>
+      <property name="name" value="Babloo" />
+     <property name="address">
+        <ref bean="id2" />
+     </property>   -->
+     
+     
+
+  </bean>
+
+</beans>

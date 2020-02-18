@@ -1,0 +1,23 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean id="id1" class="setterInjection.Car">
+
+<property name="FuelType" value="Petrol" />
+<property name="MaxSpeed" value="80"/>
+
+</bean>
+<bean id="id2" class="setterInjection.Bus">
+
+<property name="FuelType" value="Diesel" />
+<property name="MaxSpeed" value="60"/>
+
+</bean>
+<bean id="id3" class="setterInjection.Travel">
+<property name="v">
+  <ref bean="id2" />
+</property>
+
+</bean>
+</beans>

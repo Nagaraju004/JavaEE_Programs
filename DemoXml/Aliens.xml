@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE aliens SYSTEM "AlienType.dtd">
+<aliens>
+  
+  <alien aid="a1" lang="java">
+     <name>Naga</name>
+     <salary>33000</salary>
+  </alien>
+  
+   <alien aid="a2">
+     <name>Raga</name>
+     <salary>30000</salary>
+  </alien>
+
+</aliens>

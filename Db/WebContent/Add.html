@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert data</title>
+ <script>
+        function validate()
+        {
+        	var name=document.getElementById("name");
+          if(name.value=="")
+            {
+              alert("username cannot be blank");
+            }
+          
+        }
+      </script>
+</head>
+<body>
+  </style>
+    </head>
+    <body class="bo" >
+        <header>
+            <center>
+             <h1>Login</h1>
+           </center >
+        </header>
+     
+       
+        
+                
+         <center>
+        
+   <div class="container">
+		 <form method="post" action="login2">
+		<center><b>Username:</b></center><input type="text" name="uname" id="name" placeholder="enter username">
+		<center><b>Password:</b></center><input type="password" name="pass"  id="pword" required placeholder="enter password">
+		<center><b>Age:</b></center><input type="text" name="age" required id="age" placeholder="enter password">
+		<input type="submit" value="login"  onclick="validate()">
+		    </form>
+    </div>
+	</center>
+	 
+    
+    <footer>
+        <marquee>
+            <center>
+                <p>@E2 infosystems</p>
+            </center>
+        </marquee>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  <bean id="id1" class="autowireByName.Categorie" autowire="byName">
+    <property name="name" value="General Books" />   
+  </bean>
+  <bean id="bk" class="autowireByName.Book">
+    <property name="BookName" value="ABC"/>
+    <property name="BookPrice" value="300"/>
+  </bean>
+  
+  
+
+<!--  <bean id="no" class="autowireByName.Note">
+    <property name="NoteName" value="ABD"/>
+    <property name="NotePrice" value="0"/>
+  </bean> -->
+</beans>
